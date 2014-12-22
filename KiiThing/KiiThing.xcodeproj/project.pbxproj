@@ -933,6 +933,7 @@
 		D5962C1D1A47CAE9004C91F5 /* TemplateIcon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = TemplateIcon.icns; path = Utilities/TemplateIcon.icns; sourceTree = "<group>"; };
 		D5962C1E1A47CAE9004C91F5 /* uploader_izmir.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; name = uploader_izmir.sh; path = Utilities/uploader_izmir.sh; sourceTree = "<group>"; };
 		D5962C1F1A47CAE9004C91F5 /* KiiThing.ino */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; path = KiiThing.ino; sourceTree = "<group>"; };
+		D5962C341A47D114004C91F5 /* Avrdude.mk */ = {isa = PBXFileReference; lastKnownFileType = text; name = Avrdude.mk; path = Makefiles/Avrdude.mk; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
@@ -1914,6 +1915,7 @@
 		D5962BFE1A47CAE8004C91F5 /* Makefiles */ = {
 			isa = PBXGroup;
 			children = (
+				D5962C341A47D114004C91F5 /* Avrdude.mk */,
 				D5962C071A47CAE8004C91F5 /* EnergiaCC3200.mk */,
 				D5962C0F1A47CAE8004C91F5 /* Step1.mk */,
 				D5962C101A47CAE8004C91F5 /* Step2.mk */,
