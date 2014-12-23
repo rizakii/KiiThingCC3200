@@ -461,7 +461,42 @@
 		D5262C1F1A47CAE9004C91F5 /* KiiThing.ino in Sources */ = {isa = PBXBuildFile; fileRef = D5962C1F1A47CAE9004C91F5 /* KiiThing.ino */; };
 		D5962BBF1A47CAE8004C91F5 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D5962BBE1A47CAE8004C91F5 /* main.cpp */; };
 		D5962BC41A47CAE8004C91F5 /* LocalLibrary.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D5962BC31A47CAE8004C91F5 /* LocalLibrary.cpp */; };
+		D5962C3C1A47D26D004C91F5 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D5962C3B1A47D26D004C91F5 /* main.cpp */; };
+		D5962C471A47D321004C91F5 /* MockLib.h in Headers */ = {isa = PBXBuildFile; fileRef = D5962C461A47D321004C91F5 /* MockLib.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D5962C491A47D321004C91F5 /* MockLibPriv.h in Headers */ = {isa = PBXBuildFile; fileRef = D5962C481A47D321004C91F5 /* MockLibPriv.h */; };
+		D5962C511A47D59F004C91F5 /* libMockLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D5962C441A47D321004C91F5 /* libMockLib.a */; };
+		D5962C571A47E476004C91F5 /* WiFiClient.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D5962C551A47E476004C91F5 /* WiFiClient.cpp */; };
+		D5962C581A47E476004C91F5 /* WiFiClient.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D5962C551A47E476004C91F5 /* WiFiClient.cpp */; };
+		D5962C591A47E476004C91F5 /* WiFiClient.h in Headers */ = {isa = PBXBuildFile; fileRef = D5962C561A47E476004C91F5 /* WiFiClient.h */; };
+		D5962C5C1A47EAB0004C91F5 /* Kii.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D5962C5A1A47EAB0004C91F5 /* Kii.cpp */; };
+		D5962C5D1A47EAB0004C91F5 /* Kii.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D5962C5A1A47EAB0004C91F5 /* Kii.cpp */; };
+		D5962C601A480090004C91F5 /* KiiRequest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D5962C5E1A480090004C91F5 /* KiiRequest.cpp */; };
+		D5962C611A480090004C91F5 /* KiiRequest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D5962C5E1A480090004C91F5 /* KiiRequest.cpp */; };
+		D5962C641A480826004C91F5 /* Serial.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D5962C621A480826004C91F5 /* Serial.cpp */; };
+		D5962C651A480826004C91F5 /* Serial.h in Headers */ = {isa = PBXBuildFile; fileRef = D5962C631A480826004C91F5 /* Serial.h */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D5962C4F1A47D596004C91F5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D5962BB01A47CAE8004C91F5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D5962C431A47D321004C91F5;
+			remoteInfo = MockLib;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D5962C371A47D26D004C91F5 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		AAAA141222124834AA000005 /* Arduino.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Arduino.h; sourceTree = "<group>"; };
@@ -934,7 +969,40 @@
 		D5962C1E1A47CAE9004C91F5 /* uploader_izmir.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; name = uploader_izmir.sh; path = Utilities/uploader_izmir.sh; sourceTree = "<group>"; };
 		D5962C1F1A47CAE9004C91F5 /* KiiThing.ino */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; path = KiiThing.ino; sourceTree = "<group>"; };
 		D5962C341A47D114004C91F5 /* Avrdude.mk */ = {isa = PBXFileReference; lastKnownFileType = text; name = Avrdude.mk; path = Makefiles/Avrdude.mk; sourceTree = "<group>"; };
+		D5962C391A47D26D004C91F5 /* MockingTools */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MockingTools; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5962C3B1A47D26D004C91F5 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		D5962C441A47D321004C91F5 /* libMockLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMockLib.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5962C461A47D321004C91F5 /* MockLib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MockLib.h; sourceTree = "<group>"; };
+		D5962C481A47D321004C91F5 /* MockLibPriv.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MockLibPriv.h; sourceTree = "<group>"; };
+		D5962C531A47D747004C91F5 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		D5962C541A47D802004C91F5 /* Mock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mock.h; sourceTree = "<group>"; };
+		D5962C551A47E476004C91F5 /* WiFiClient.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = WiFiClient.cpp; sourceTree = "<group>"; };
+		D5962C561A47E476004C91F5 /* WiFiClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WiFiClient.h; sourceTree = "<group>"; };
+		D5962C5A1A47EAB0004C91F5 /* Kii.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Kii.cpp; path = Kii/Kii.cpp; sourceTree = "<group>"; };
+		D5962C5B1A47EAB0004C91F5 /* Kii.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Kii.h; path = Kii/Kii.h; sourceTree = "<group>"; };
+		D5962C5E1A480090004C91F5 /* KiiRequest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = KiiRequest.cpp; path = Kii/KiiRequest.cpp; sourceTree = "<group>"; };
+		D5962C5F1A480090004C91F5 /* KiiRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KiiRequest.h; path = Kii/KiiRequest.h; sourceTree = "<group>"; };
+		D5962C621A480826004C91F5 /* Serial.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Serial.cpp; sourceTree = "<group>"; };
+		D5962C631A480826004C91F5 /* Serial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Serial.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D5962C361A47D26D004C91F5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5962C511A47D59F004C91F5 /* libMockLib.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5962C411A47D321004C91F5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		AAAA141222124834AA000000 /* Resources */ = {
@@ -1865,6 +1933,8 @@
 			isa = PBXGroup;
 			children = (
 				D5962BBD1A47CAE8004C91F5 /* KiiThing */,
+				D5962C3A1A47D26D004C91F5 /* MockingTools */,
+				D5962C451A47D321004C91F5 /* MockLib */,
 				D5962BBC1A47CAE8004C91F5 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -1873,6 +1943,8 @@
 			isa = PBXGroup;
 			children = (
 				D5962BBB1A47CAE8004C91F5 /* Index */,
+				D5962C391A47D26D004C91F5 /* MockingTools */,
+				D5962C441A47D321004C91F5 /* libMockLib.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1892,6 +1964,10 @@
 				D5962BFE1A47CAE8004C91F5 /* Makefiles */,
 				D5962C151A47CAE9004C91F5 /* About */,
 				D5962C171A47CAE9004C91F5 /* Utilities */,
+				D5962C5A1A47EAB0004C91F5 /* Kii.cpp */,
+				D5962C5B1A47EAB0004C91F5 /* Kii.h */,
+				D5962C5E1A480090004C91F5 /* KiiRequest.cpp */,
+				D5962C5F1A480090004C91F5 /* KiiRequest.h */,
 			);
 			path = KiiThing;
 			sourceTree = "<group>";
@@ -1944,7 +2020,44 @@
 			name = Utilities;
 			sourceTree = "<group>";
 		};
+		D5962C3A1A47D26D004C91F5 /* MockingTools */ = {
+			isa = PBXGroup;
+			children = (
+				D5962C3B1A47D26D004C91F5 /* main.cpp */,
+				D5962C531A47D747004C91F5 /* PrefixHeader.pch */,
+				D5962C541A47D802004C91F5 /* Mock.h */,
+			);
+			path = MockingTools;
+			sourceTree = "<group>";
+		};
+		D5962C451A47D321004C91F5 /* MockLib */ = {
+			isa = PBXGroup;
+			children = (
+				D5962C461A47D321004C91F5 /* MockLib.h */,
+				D5962C481A47D321004C91F5 /* MockLibPriv.h */,
+				D5962C551A47E476004C91F5 /* WiFiClient.cpp */,
+				D5962C561A47E476004C91F5 /* WiFiClient.h */,
+				D5962C621A480826004C91F5 /* Serial.cpp */,
+				D5962C631A480826004C91F5 /* Serial.h */,
+			);
+			path = MockLib;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		D5962C421A47D321004C91F5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5962C471A47D321004C91F5 /* MockLib.h in Headers */,
+				D5962C591A47E476004C91F5 /* WiFiClient.h in Headers */,
+				D5962C651A480826004C91F5 /* Serial.h in Headers */,
+				D5962C491A47D321004C91F5 /* MockLibPriv.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXLegacyTarget section */
 		D5962BB41A47CAE8004C91F5 /* All */ = {
@@ -2035,6 +2148,41 @@
 			productReference = D5962BBB1A47CAE8004C91F5 /* Index */;
 			productType = "com.apple.product-type.tool";
 		};
+		D5962C381A47D26D004C91F5 /* MockingTools */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D5962C3D1A47D26D004C91F5 /* Build configuration list for PBXNativeTarget "MockingTools" */;
+			buildPhases = (
+				D5962C351A47D26D004C91F5 /* Sources */,
+				D5962C361A47D26D004C91F5 /* Frameworks */,
+				D5962C371A47D26D004C91F5 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D5962C501A47D596004C91F5 /* PBXTargetDependency */,
+			);
+			name = MockingTools;
+			productName = MockingTools;
+			productReference = D5962C391A47D26D004C91F5 /* MockingTools */;
+			productType = "com.apple.product-type.tool";
+		};
+		D5962C431A47D321004C91F5 /* MockLib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D5962C4C1A47D321004C91F5 /* Build configuration list for PBXNativeTarget "MockLib" */;
+			buildPhases = (
+				D5962C401A47D321004C91F5 /* Sources */,
+				D5962C411A47D321004C91F5 /* Frameworks */,
+				D5962C421A47D321004C91F5 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MockLib;
+			productName = MockLib;
+			productReference = D5962C441A47D321004C91F5 /* libMockLib.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -2062,6 +2210,12 @@
 					D5962BBA1A47CAE8004C91F5 = {
 						CreatedOnToolsVersion = 6.1.1;
 					};
+					D5962C381A47D26D004C91F5 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					D5962C431A47D321004C91F5 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
 				};
 			};
 			buildConfigurationList = D5962BB31A47CAE8004C91F5 /* Build configuration list for PBXProject "KiiThing" */;
@@ -2082,6 +2236,8 @@
 				D5962BB71A47CAE8004C91F5 /* Serial */,
 				D5962BB81A47CAE8004C91F5 /* Upload */,
 				D5962BBA1A47CAE8004C91F5 /* Index */,
+				D5962C381A47D26D004C91F5 /* MockingTools */,
+				D5962C431A47D321004C91F5 /* MockLib */,
 			);
 		};
 /* End PBXProject section */
@@ -2208,6 +2364,7 @@
 				AA2A141222124834AA00008B /* Arduino.h in Sources */,
 				AA2A141222124834AA00008D /* dtostrf.c in Sources */,
 				AA2A141222124834AA00008E /* dtostrf.h in Sources */,
+				D5962C601A480090004C91F5 /* KiiRequest.cpp in Sources */,
 				AA2A141222124834AA00008F /* interrupt.h in Sources */,
 				AA2A141222124834AA000090 /* pgmspace.h in Sources */,
 				AA2A141222124834AA000091 /* binary.h in Sources */,
@@ -2386,6 +2543,7 @@
 				AA2A141222124834AA00014B /* WifiIPStack.h in Sources */,
 				AA2A141222124834AA00014D /* PubNub.cpp in Sources */,
 				AA2A141222124834AA00014E /* PubNub.h in Sources */,
+				D5962C5C1A47EAB0004C91F5 /* Kii.cpp in Sources */,
 				AA2A141222124834AA000150 /* PubSubClient.cpp in Sources */,
 				AA2A141222124834AA000151 /* PubSubClient.h in Sources */,
 				AA2A141222124834AA000153 /* Servo.cpp in Sources */,
@@ -2548,7 +2706,35 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D5962C351A47D26D004C91F5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5962C5D1A47EAB0004C91F5 /* Kii.cpp in Sources */,
+				D5962C611A480090004C91F5 /* KiiRequest.cpp in Sources */,
+				D5962C3C1A47D26D004C91F5 /* main.cpp in Sources */,
+				D5962C571A47E476004C91F5 /* WiFiClient.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5962C401A47D321004C91F5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5962C581A47E476004C91F5 /* WiFiClient.cpp in Sources */,
+				D5962C641A480826004C91F5 /* Serial.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D5962C501A47D596004C91F5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D5962C431A47D321004C91F5 /* MockLib */;
+			targetProxy = D5962C4F1A47D596004C91F5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		D5962C201A47CAE9004C91F5 /* Debug */ = {
@@ -2705,6 +2891,70 @@
 			};
 			name = Release;
 		};
+		D5962C3E1A47D26D004C91F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = MockingTools/PrefixHeader.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		D5962C3F1A47D26D004C91F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = MockingTools/PrefixHeader.pch;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		D5962C4D1A47D321004C91F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				EXECUTABLE_PREFIX = lib;
+				GCC_ENABLE_CPP_EXCEPTIONS = YES;
+				GCC_ENABLE_CPP_RTTI = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		D5962C4E1A47D321004C91F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				EXECUTABLE_PREFIX = lib;
+				GCC_ENABLE_CPP_EXCEPTIONS = YES;
+				GCC_ENABLE_CPP_RTTI = YES;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -2767,6 +3017,24 @@
 			buildConfigurations = (
 				D5962C321A47CAE9004C91F5 /* Debug */,
 				D5962C331A47CAE9004C91F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D5962C3D1A47D26D004C91F5 /* Build configuration list for PBXNativeTarget "MockingTools" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D5962C3E1A47D26D004C91F5 /* Debug */,
+				D5962C3F1A47D26D004C91F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D5962C4C1A47D321004C91F5 /* Build configuration list for PBXNativeTarget "MockLib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D5962C4D1A47D321004C91F5 /* Debug */,
+				D5962C4E1A47D321004C91F5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

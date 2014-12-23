@@ -1,89 +1,79 @@
-// 
-// KiiThing 
-//
-// Thing SDK for CC3200
-// Developed with [embedXcode](http://embedXcode.weebly.com)
-// 
-// Author	 	Syah Riza
-// 				Kii
-//
-// Date			12/22/14 12:43 PM
-// Version		<#version#>
-// 
-// Copyright	© Syah Riza, 2014
-// Licence		<#license#>
-//
-// See			ReadMe.txt for references
-//
+#include <WiFi.h>
+#include <WiFiClient.h>
+#include <WiFiServer.h>
 
-// Core library for code-sense - IDE-based
-#if defined(WIRING) // Wiring specific
-#include "Wiring.h"
-#elif defined(MAPLE_IDE) // Maple specific
-#include "WProgram.h"
-#elif defined(MPIDE) // chipKIT specific
-#include "WProgram.h"
-#elif defined(DIGISPARK) // Digispark specific
-#include "Arduino.h"
-#elif defined(ENERGIA) // LaunchPad specific
-#include "Energia.h"
-#elif defined(LITTLEROBOTFRIENDS) // LittleRobotFriends specific
-#include "LRF.h"
-#elif defined(MICRODUINO) // Microduino specific
-#include "Arduino.h"
-#elif defined(TEENSYDUINO) // Teensy specific
-#include "Arduino.h"
-#elif defined(REDBEARLAB) // RedBearLab specific
-#include "Arduino.h"
-#elif defined(ARDUINO) // Arduino 1.0 and 1.5 specific
-#include "Arduino.h"
-#else // error
-#error Platform not defined
-#endif // end IDE
+#include "Kii.h"
+#include "KiiRequest.h"
 
-// Include application, user and local libraries
+char wifi_name[] = "foobar";
+char wifi_password[] = "launchpad";
+char hostname[] = "myserver";
+// your network name also called SSID
+char ssid[] = "ssid";
+// your network password
+char password[] = "pwd";
+// your network key Index number (needed only for WEP)
+int keyIndex = 0;
 
+void printWifiStatus();
 
-// Define variables and constants
-//
-// Brief	Name of the LED
-// Details	Each board has a LED but connected to a different pin
-//
-uint8_t myLED;
-
-
-//
-// Brief	Setup
-// Details	Define the pin the LED is connected to
-//
-// Add setup code 
 void setup() {
-  // myLED pin number
-#if defined(ENERGIA) // All LaunchPads supported by Energia
-    myLED = RED_LED;
-#elif defined(DIGISPARK) // Digispark specific
-    myLED = 1; // assuming model A
-#elif defined(MAPLE_IDE) // Maple specific
-    myLED = BOARD_LED_PIN;
-#elif defined(WIRING) // Wiring specific
-    myLED = 15;
-#elif defined(LITTLEROBOTFRIENDS) // LittleRobotFriends specific
-    myLED = 10;
-#else // Arduino, chipKIT, Teensy specific
-    myLED = 13;
-#endif
-
-    pinMode(myLED, OUTPUT);
+    //Initialize serial and wait for port to open:
+    Serial.begin(115200);
+    char buf[1025];
+    int i;
+    size_t total = 0;
+    // attempt to connect to Wifi network:
+    Serial.print("Attempting to connect to Network named: ");
+    // print the network name (SSID);
+    Serial.println(ssid);
+    // Connect to WPA/WPA2 network. Change this line if using open or WEP network:
+    WiFi.begin(ssid, password);
+    while ( WiFi.status() != WL_CONNECTED) {
+        // print dots while we wait to connect
+        Serial.print(".");
+        delay(300);
+    }
+    
+    Serial.println("\nYou're connected to the network");
+    Serial.println("Waiting for an ip address");
+    
+    while (WiFi.localIP() == INADDR_NONE) {
+        // print dots while we wait for an ip addresss
+        Serial.print(".");
+        delay(300);
+    }
+    
+    Serial.println("\nIP Address obtained");
+    printWifiStatus();
+    
+    Serial.println("\nStarting connection to server...");
+    Kii::instance()->init("api-development-jp.internal.kii.com", "f25bd5bf", "3594109968d7adf522c9991c0be51137");
+    KiiRequest request;
+    
+    request.sendRequest("POST", "things", "{\"_password\":\"password\" , \"_vendorThingID\":\"NewrBnvSPOXBDF9r29GJeGS\"}");
+    
 }
 
-//
-// Brief	Loop
-// Details	Blink the LED
-//
-// Add loop code 
-void loop() {
-    digitalWrite(myLED, HIGH);
-    delay(500);
-    digitalWrite(myLED, LOW);
-    delay(500);    
+void loop()
+{
+    
+}
+
+
+void printWifiStatus() {
+    // print the SSID of the network you're attached to:
+    Serial.print("SSID: ");
+    Serial.println(WiFi.SSID());
+    
+    // print your WiFi shield's IP address:
+    IPAddress ip = WiFi.localIP();
+    Serial.print("IP Address: ");
+    Serial.println(ip);
+    
+    // print the received signal strength:
+    long rssi = WiFi.RSSI();
+    Serial.print("signal strength (RSSI):");
+    Serial.print(rssi);
+    Serial.println(" dBm");
 }

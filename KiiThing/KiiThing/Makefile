@@ -13,7 +13,7 @@
 # Libraries
 # ----------------------------------
 # Declare application Arduino/chipKIT/Digispark/Energia/Maple/Microduino/Teensy/Wiring
-# and user's libraries used 
+# and user's libraries used
 # Short-listing libraries speeds-up building
 # Typing = 0 takes none (default for application and user)
 # Otherwise, leaving empty considers all
@@ -21,14 +21,14 @@
 # List application Arduino/chipKIT/Digispark/Energia/Maple/Microduino/Teensy/Wiring libraries here
 # default = 0 = none
 #
-# ENERGIA = ADS1118 IRremote LCDDRIVER LiquidCrystal SPI 
-#	Stepper Wire Adafruit_TMP006 AIR430BoostEuropeETSI 
-#	AIR430BoostUSAFCC aJson BMA222 CogLCD MQTTClient PubNub PubSubClient 
-#	Servo SPI Temboo WiFi Wire 
+# ENERGIA = ADS1118 IRremote LCDDRIVER LiquidCrystal SPI
+#	Stepper Wire Adafruit_TMP006 AIR430BoostEuropeETSI
+#	AIR430BoostUSAFCC aJson BMA222 CogLCD MQTTClient PubNub PubSubClient
+#	Servo SPI Temboo WiFi Wire
 #
-APP_LIBS_LIST = 0
+APP_LIBS_LIST = SPI WiFi
 
-# List user's libraries here 
+# List user's libraries here
 # default = 0 = none
 #
 #
@@ -65,7 +65,7 @@ USER_LIBS_LIST = 0
 # SERIAL_BAUDRATE for the serial console, 9600 by default
 # Uncomment and specify another speed
 #
-#SERIAL_BAUDRATE = 19200
+SERIAL_BAUDRATE = 115200
 
 
 # Miscellaneous
@@ -77,7 +77,7 @@ CURRENT_DIR   := $(shell echo '$(CURRENT_DIR)' | sed 's/ /\\\ /g')
 
 # C-compliant project name
 #
-PROJECT_NAME_AS_IDENTIFIER = KiiThing
+PROJECT_NAME_AS_IDENTIFIER = WifiOne
 
 MAKEFILE_PATH  = $(CURRENT_DIR)/Makefiles
 UTILITIES_PATH = $(CURRENT_DIR)/Utilities
