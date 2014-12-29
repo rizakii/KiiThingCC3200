@@ -457,10 +457,14 @@
 		AA2A141222124834AA0001FB /* hw_adc.h in Sources */ = {isa = PBXBuildFile; fileRef = AAAA141222124834AA0001FB /* hw_adc.h */; };
 		AA2A141222124834AA0001FC /* hw_aes.h in Sources */ = {isa = PBXBuildFile; fileRef = AAAA141222124834AA0001FC /* hw_aes.h */; };
 		AA2A141222124834AA0001FD /* hw_can.h in Sources */ = {isa = PBXBuildFile; fileRef = AAAA141222124834AA0001FD /* hw_can.h */; };
-		D5262BC51A47CAE8004C91F5 /* LocalLibrary.h in Sources */ = {isa = PBXBuildFile; fileRef = D5962BC51A47CAE8004C91F5 /* LocalLibrary.h */; };
+		D5071AE71A4FD1C000BD96D6 /* KiiThing.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D5071AE51A4FD1C000BD96D6 /* KiiThing.cpp */; };
+		D5071AE81A4FD1C000BD96D6 /* KiiThing.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D5071AE51A4FD1C000BD96D6 /* KiiThing.cpp */; };
+		D5071AF41A5125DE00BD96D6 /* KiiThingRequestObserver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D5071AF21A5125DE00BD96D6 /* KiiThingRequestObserver.cpp */; };
+		D5071AF51A5125DE00BD96D6 /* KiiThingRequestObserver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D5071AF21A5125DE00BD96D6 /* KiiThingRequestObserver.cpp */; };
+		D5071AF91A5181C500BD96D6 /* MockTools.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D5071AF61A5181C500BD96D6 /* MockTools.cpp */; };
+		D5071AFA1A5181C500BD96D6 /* MockTools.h in Headers */ = {isa = PBXBuildFile; fileRef = D5071AF71A5181C500BD96D6 /* MockTools.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D5262C1F1A47CAE9004C91F5 /* KiiThing.ino in Sources */ = {isa = PBXBuildFile; fileRef = D5962C1F1A47CAE9004C91F5 /* KiiThing.ino */; };
 		D5962BBF1A47CAE8004C91F5 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D5962BBE1A47CAE8004C91F5 /* main.cpp */; };
-		D5962BC41A47CAE8004C91F5 /* LocalLibrary.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D5962BC31A47CAE8004C91F5 /* LocalLibrary.cpp */; };
 		D5962C3C1A47D26D004C91F5 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D5962C3B1A47D26D004C91F5 /* main.cpp */; };
 		D5962C471A47D321004C91F5 /* MockLib.h in Headers */ = {isa = PBXBuildFile; fileRef = D5962C461A47D321004C91F5 /* MockLib.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D5962C491A47D321004C91F5 /* MockLibPriv.h in Headers */ = {isa = PBXBuildFile; fileRef = D5962C481A47D321004C91F5 /* MockLibPriv.h */; };
@@ -474,6 +478,14 @@
 		D5962C611A480090004C91F5 /* KiiRequest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D5962C5E1A480090004C91F5 /* KiiRequest.cpp */; };
 		D5962C641A480826004C91F5 /* Serial.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D5962C621A480826004C91F5 /* Serial.cpp */; };
 		D5962C651A480826004C91F5 /* Serial.h in Headers */ = {isa = PBXBuildFile; fileRef = D5962C631A480826004C91F5 /* Serial.h */; };
+		D5962C791A4AB1D4004C91F5 /* header.c in Sources */ = {isa = PBXBuildFile; fileRef = D5962C771A4AB1D4004C91F5 /* header.c */; };
+		D5962C8C1A4ABB8A004C91F5 /* chunk.c in Sources */ = {isa = PBXBuildFile; fileRef = D5962C8A1A4ABB8A004C91F5 /* chunk.c */; };
+		D5962C911A4ABD54004C91F5 /* http.c in Sources */ = {isa = PBXBuildFile; fileRef = D5962C8F1A4ABD54004C91F5 /* http.c */; };
+		D5962C921A4ABF49004C91F5 /* http.c in Sources */ = {isa = PBXBuildFile; fileRef = D5962C8F1A4ABD54004C91F5 /* http.c */; };
+		D5962C931A4ABF4D004C91F5 /* chunk.c in Sources */ = {isa = PBXBuildFile; fileRef = D5962C8A1A4ABB8A004C91F5 /* chunk.c */; };
+		D5962C941A4ABF55004C91F5 /* header.c in Sources */ = {isa = PBXBuildFile; fileRef = D5962C771A4AB1D4004C91F5 /* header.c */; };
+		D5A82DC01A4C0289005174FB /* jsmn.c in Sources */ = {isa = PBXBuildFile; fileRef = D5A82DBE1A4C0289005174FB /* jsmn.c */; };
+		D5A82DC11A4C02C8005174FB /* jsmn.c in Sources */ = {isa = PBXBuildFile; fileRef = D5A82DBE1A4C0289005174FB /* jsmn.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -949,12 +961,17 @@
 		AAAA141222124834AA0001FB /* hw_adc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hw_adc.h; sourceTree = "<group>"; };
 		AAAA141222124834AA0001FC /* hw_aes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hw_aes.h; sourceTree = "<group>"; };
 		AAAA141222124834AA0001FD /* hw_can.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hw_can.h; sourceTree = "<group>"; };
+		D5071AE51A4FD1C000BD96D6 /* KiiThing.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = KiiThing.cpp; path = Kii/KiiThing.cpp; sourceTree = "<group>"; };
+		D5071AE61A4FD1C000BD96D6 /* KiiThing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KiiThing.h; path = Kii/KiiThing.h; sourceTree = "<group>"; };
+		D5071AEF1A5125A100BD96D6 /* IRequestObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IRequestObserver.h; path = Kii/IRequestObserver.h; sourceTree = "<group>"; };
+		D5071AF21A5125DE00BD96D6 /* KiiThingRequestObserver.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = KiiThingRequestObserver.cpp; path = Kii/KiiThingRequestObserver.cpp; sourceTree = "<group>"; };
+		D5071AF31A5125DE00BD96D6 /* KiiThingRequestObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KiiThingRequestObserver.h; path = Kii/KiiThingRequestObserver.h; sourceTree = "<group>"; };
+		D5071AF61A5181C500BD96D6 /* MockTools.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MockTools.cpp; sourceTree = "<group>"; };
+		D5071AF71A5181C500BD96D6 /* MockTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MockTools.h; sourceTree = "<group>"; };
 		D5962BBB1A47CAE8004C91F5 /* Index */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Index; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5962BBE1A47CAE8004C91F5 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		D5962BC01A47CAE8004C91F5 /* Makefile */ = {isa = PBXFileReference; explicitFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
 		D5962BC21A47CAE8004C91F5 /* ReadMe.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = ReadMe.txt; sourceTree = "<group>"; };
-		D5962BC31A47CAE8004C91F5 /* LocalLibrary.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = LocalLibrary.cpp; sourceTree = "<group>"; };
-		D5962BC51A47CAE8004C91F5 /* LocalLibrary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LocalLibrary.h; sourceTree = "<group>"; };
 		D5962BC71A47CAE8004C91F5 /* Sketchbook.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = Sketchbook.txt; path = Sketchbook/Sketchbook.txt; sourceTree = "<group>"; };
 		D5962BE61A47CAE8004C91F5 /* LaunchPad WiFi with CC3200.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = "LaunchPad WiFi with CC3200.xcconfig"; path = "Configurations/LaunchPad WiFi with CC3200.xcconfig"; sourceTree = "<group>"; };
 		D5962C071A47CAE8004C91F5 /* EnergiaCC3200.mk */ = {isa = PBXFileReference; explicitFileType = sourcecode.make; name = EnergiaCC3200.mk; path = Makefiles/EnergiaCC3200.mk; sourceTree = "<group>"; };
@@ -984,6 +1001,14 @@
 		D5962C5F1A480090004C91F5 /* KiiRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KiiRequest.h; path = Kii/KiiRequest.h; sourceTree = "<group>"; };
 		D5962C621A480826004C91F5 /* Serial.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Serial.cpp; sourceTree = "<group>"; };
 		D5962C631A480826004C91F5 /* Serial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Serial.h; sourceTree = "<group>"; };
+		D5962C771A4AB1D4004C91F5 /* header.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = header.c; path = Kii/header.c; sourceTree = "<group>"; };
+		D5962C781A4AB1D4004C91F5 /* header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = header.h; path = Kii/header.h; sourceTree = "<group>"; };
+		D5962C8A1A4ABB8A004C91F5 /* chunk.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = chunk.c; path = Kii/chunk.c; sourceTree = "<group>"; };
+		D5962C8B1A4ABB8A004C91F5 /* chunk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = chunk.h; path = Kii/chunk.h; sourceTree = "<group>"; };
+		D5962C8F1A4ABD54004C91F5 /* http.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = http.c; path = Kii/http.c; sourceTree = "<group>"; };
+		D5962C901A4ABD54004C91F5 /* http.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = http.h; path = Kii/http.h; sourceTree = "<group>"; };
+		D5A82DBE1A4C0289005174FB /* jsmn.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = jsmn.c; path = Kii/jsmn.c; sourceTree = "<group>"; };
+		D5A82DBF1A4C0289005174FB /* jsmn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = jsmn.h; path = Kii/jsmn.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1955,8 +1980,6 @@
 				D5962BBE1A47CAE8004C91F5 /* main.cpp */,
 				D5962BC01A47CAE8004C91F5 /* Makefile */,
 				D5962BC21A47CAE8004C91F5 /* ReadMe.txt */,
-				D5962BC31A47CAE8004C91F5 /* LocalLibrary.cpp */,
-				D5962BC51A47CAE8004C91F5 /* LocalLibrary.h */,
 				D5962C1F1A47CAE9004C91F5 /* KiiThing.ino */,
 				D5962BC61A47CAE8004C91F5 /* Sketchbook */,
 				AAAA141222124834AA000000 /* Resources */,
@@ -1964,10 +1987,7 @@
 				D5962BFE1A47CAE8004C91F5 /* Makefiles */,
 				D5962C151A47CAE9004C91F5 /* About */,
 				D5962C171A47CAE9004C91F5 /* Utilities */,
-				D5962C5A1A47EAB0004C91F5 /* Kii.cpp */,
-				D5962C5B1A47EAB0004C91F5 /* Kii.h */,
-				D5962C5E1A480090004C91F5 /* KiiRequest.cpp */,
-				D5962C5F1A480090004C91F5 /* KiiRequest.h */,
+				D5962C661A4A62A5004C91F5 /* Kii */,
 			);
 			path = KiiThing;
 			sourceTree = "<group>";
@@ -2039,8 +2059,34 @@
 				D5962C561A47E476004C91F5 /* WiFiClient.h */,
 				D5962C621A480826004C91F5 /* Serial.cpp */,
 				D5962C631A480826004C91F5 /* Serial.h */,
+				D5071AF61A5181C500BD96D6 /* MockTools.cpp */,
+				D5071AF71A5181C500BD96D6 /* MockTools.h */,
 			);
 			path = MockLib;
+			sourceTree = "<group>";
+		};
+		D5962C661A4A62A5004C91F5 /* Kii */ = {
+			isa = PBXGroup;
+			children = (
+				D5962C5A1A47EAB0004C91F5 /* Kii.cpp */,
+				D5962C5B1A47EAB0004C91F5 /* Kii.h */,
+				D5962C5E1A480090004C91F5 /* KiiRequest.cpp */,
+				D5962C5F1A480090004C91F5 /* KiiRequest.h */,
+				D5962C771A4AB1D4004C91F5 /* header.c */,
+				D5962C781A4AB1D4004C91F5 /* header.h */,
+				D5962C8A1A4ABB8A004C91F5 /* chunk.c */,
+				D5962C8B1A4ABB8A004C91F5 /* chunk.h */,
+				D5962C8F1A4ABD54004C91F5 /* http.c */,
+				D5962C901A4ABD54004C91F5 /* http.h */,
+				D5A82DBE1A4C0289005174FB /* jsmn.c */,
+				D5A82DBF1A4C0289005174FB /* jsmn.h */,
+				D5071AE51A4FD1C000BD96D6 /* KiiThing.cpp */,
+				D5071AE61A4FD1C000BD96D6 /* KiiThing.h */,
+				D5071AEF1A5125A100BD96D6 /* IRequestObserver.h */,
+				D5071AF21A5125DE00BD96D6 /* KiiThingRequestObserver.cpp */,
+				D5071AF31A5125DE00BD96D6 /* KiiThingRequestObserver.h */,
+			);
+			name = Kii;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -2050,6 +2096,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5071AFA1A5181C500BD96D6 /* MockTools.h in Headers */,
 				D5962C471A47D321004C91F5 /* MockLib.h in Headers */,
 				D5962C591A47E476004C91F5 /* WiFiClient.h in Headers */,
 				D5962C651A480826004C91F5 /* Serial.h in Headers */,
@@ -2248,8 +2295,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				D5962BBF1A47CAE8004C91F5 /* main.cpp in Sources */,
-				D5962BC41A47CAE8004C91F5 /* LocalLibrary.cpp in Sources */,
-				D5262BC51A47CAE8004C91F5 /* LocalLibrary.h in Sources */,
 				D5262C1F1A47CAE9004C91F5 /* KiiThing.ino in Sources */,
 				AA2A141222124834AA000005 /* Arduino.h in Sources */,
 				AA2A141222124834AA000006 /* binary.h in Sources */,
@@ -2265,6 +2310,7 @@
 				AA2A141222124834AA000012 /* F28020.cmd in Sources */,
 				AA2A141222124834AA000013 /* F280200.cmd in Sources */,
 				AA2A141222124834AA000014 /* F28021.cmd in Sources */,
+				D5962C791A4AB1D4004C91F5 /* header.c in Sources */,
 				AA2A141222124834AA000015 /* F28022.cmd in Sources */,
 				AA2A141222124834AA000016 /* F28023.cmd in Sources */,
 				AA2A141222124834AA000017 /* F28026.cmd in Sources */,
@@ -2281,6 +2327,7 @@
 				AA2A141222124834AA000025 /* F2802x_Comp.c in Sources */,
 				AA2A141222124834AA000026 /* F2802x_CpuTimers.c in Sources */,
 				AA2A141222124834AA000027 /* F2802x_DefaultIsr.c in Sources */,
+				D5A82DC01A4C0289005174FB /* jsmn.c in Sources */,
 				AA2A141222124834AA000028 /* F2802x_ECap.c in Sources */,
 				AA2A141222124834AA000029 /* F2802x_EPwm.c in Sources */,
 				AA2A141222124834AA00002A /* F2802x_Gpio.c in Sources */,
@@ -2300,6 +2347,7 @@
 				AA2A141222124834AA00003B /* F2802x_Adc.h in Sources */,
 				AA2A141222124834AA00003C /* F2802x_BootVars.h in Sources */,
 				AA2A141222124834AA00003D /* F2802x_Comp.h in Sources */,
+				D5071AF41A5125DE00BD96D6 /* KiiThingRequestObserver.cpp in Sources */,
 				AA2A141222124834AA00003E /* F2802x_CpuTimers.h in Sources */,
 				AA2A141222124834AA00003F /* F2802x_DevEmu.h in Sources */,
 				AA2A141222124834AA000040 /* F2802x_ECap.h in Sources */,
@@ -2439,6 +2487,7 @@
 				AA2A141222124834AA0000D8 /* hw_i2c.h in Sources */,
 				AA2A141222124834AA0000D9 /* hw_ints.h in Sources */,
 				AA2A141222124834AA0000DA /* hw_mcasp.h in Sources */,
+				D5962C8C1A4ABB8A004C91F5 /* chunk.c in Sources */,
 				AA2A141222124834AA0000DB /* hw_mcspi.h in Sources */,
 				AA2A141222124834AA0000DC /* hw_memmap.h in Sources */,
 				AA2A141222124834AA0000DD /* hw_mmchs.h in Sources */,
@@ -2604,6 +2653,7 @@
 				AA2A141222124834AA00018F /* socket.c in Sources */,
 				AA2A141222124834AA000190 /* socket.h in Sources */,
 				AA2A141222124834AA000191 /* spawn.c in Sources */,
+				D5962C911A4ABD54004C91F5 /* http.c in Sources */,
 				AA2A141222124834AA000192 /* spawn.h in Sources */,
 				AA2A141222124834AA000193 /* trace.h in Sources */,
 				AA2A141222124834AA000194 /* user.h in Sources */,
@@ -2672,6 +2722,7 @@
 				AA2A141222124834AA0001DB /* qei.c in Sources */,
 				AA2A141222124834AA0001DC /* qei.h in Sources */,
 				AA2A141222124834AA0001DD /* rom.h in Sources */,
+				D5071AE71A4FD1C000BD96D6 /* KiiThing.cpp in Sources */,
 				AA2A141222124834AA0001DE /* rom_map.h in Sources */,
 				AA2A141222124834AA0001DF /* rtos_bindings.h in Sources */,
 				AA2A141222124834AA0001E0 /* shamd5.c in Sources */,
@@ -2710,10 +2761,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5962C921A4ABF49004C91F5 /* http.c in Sources */,
 				D5962C5D1A47EAB0004C91F5 /* Kii.cpp in Sources */,
 				D5962C611A480090004C91F5 /* KiiRequest.cpp in Sources */,
+				D5962C931A4ABF4D004C91F5 /* chunk.c in Sources */,
+				D5071AF51A5125DE00BD96D6 /* KiiThingRequestObserver.cpp in Sources */,
+				D5962C941A4ABF55004C91F5 /* header.c in Sources */,
 				D5962C3C1A47D26D004C91F5 /* main.cpp in Sources */,
+				D5071AE81A4FD1C000BD96D6 /* KiiThing.cpp in Sources */,
 				D5962C571A47E476004C91F5 /* WiFiClient.cpp in Sources */,
+				D5A82DC11A4C02C8005174FB /* jsmn.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2723,6 +2780,7 @@
 			files = (
 				D5962C581A47E476004C91F5 /* WiFiClient.cpp in Sources */,
 				D5962C641A480826004C91F5 /* Serial.cpp in Sources */,
+				D5071AF91A5181C500BD96D6 /* MockTools.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2743,7 +2801,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_CXX_LIBRARY = "libstdc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
@@ -2786,7 +2844,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_CXX_LIBRARY = "libstdc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
@@ -2895,16 +2953,21 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LIBRARY = "libstdc++";
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
+				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = MockingTools/PrefixHeader.pch;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
+				GCC_VERSION = "";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
+				VALID_ARCHS = "i386 x86_64";
 			};
 			name = Debug;
 		};
@@ -2912,13 +2975,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LIBRARY = "libstdc++";
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
+				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = MockingTools/PrefixHeader.pch;
+				GCC_VERSION = "";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
+				VALID_ARCHS = "i386 x86_64";
 			};
 			name = Release;
 		};
@@ -2935,6 +3003,7 @@
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 			};
@@ -2950,6 +3019,7 @@
 				GCC_ENABLE_CPP_RTTI = YES;
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 			};

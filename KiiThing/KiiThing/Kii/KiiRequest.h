@@ -11,10 +11,15 @@
 
 #ifndef __KiiThing__KiiRequest__
 #define __KiiThing__KiiRequest__
+#include "IRequestObserver.h"
 
 class KiiRequest{
+    String _contentType = "application/json";
+    IRequestObserver* _observer = 0;
 public:
     void sendRequest(const String httpMethod, const String path, const String data);
+    void set_contentType (const String contentType) { _contentType = contentType;};
+    void attach_observer(IRequestObserver* observer) {_observer = observer;};
 };
 
 #endif /* defined(__KiiThing__KiiRequest__) */

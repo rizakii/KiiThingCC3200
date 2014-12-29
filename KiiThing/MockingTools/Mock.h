@@ -8,8 +8,11 @@
 
 #ifndef Mock_h
 #define Mock_h
+
 #include <string>
 
 using namespace std;
 typedef std::string String;
+
+
 #endif

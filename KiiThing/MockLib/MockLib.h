@@ -15,6 +15,7 @@
 
 #include "WiFiClient.h"
 #include "Serial.h"
+#include "MockTools.h"
 
 #pragma GCC visibility pop
 #endif

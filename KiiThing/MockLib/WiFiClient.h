@@ -10,12 +10,13 @@
 #define __KiiThing__WiFiClient__
 
 #include <stdio.h>
+#include <deque>
 typedef unsigned char uint8_t;
 typedef unsigned short uint16_t;
 class WiFiClient  {
     int connectedCount=0;
     int availableCount = 0;
-    
+    std::deque<std::string> responseMock;
 public:
     WiFiClient();
     
@@ -31,7 +32,7 @@ public:
       virtual int read(uint8_t* buf, size_t size);
 //    virtual int peek();
 //    virtual void flush();
-//    virtual void stop();
+     virtual void stop();
      virtual uint8_t connected();
 //    virtual operator bool();
     

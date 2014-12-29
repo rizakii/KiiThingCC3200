@@ -5,13 +5,10 @@
 #include "Kii.h"
 #include "KiiRequest.h"
 
-char wifi_name[] = "foobar";
-char wifi_password[] = "launchpad";
-char hostname[] = "myserver";
 // your network name also called SSID
-char ssid[] = "ssid";
+char ssid[] = "";
 // your network password
-char password[] = "pwd";
+char password[] = "";
 // your network key Index number (needed only for WEP)
 int keyIndex = 0;
 
@@ -50,8 +47,8 @@ void setup() {
     Serial.println("\nStarting connection to server...");
     Kii::instance()->init("api-development-jp.internal.kii.com", "f25bd5bf", "3594109968d7adf522c9991c0be51137");
     KiiRequest request;
-    
-    request.sendRequest("POST", "things", "{\"_password\":\"password\" , \"_vendorThingID\":\"NewrBnvSPOXBDF9r29GJeGS\"}");
+    request.set_contentType("application/vnd.kii.ThingRegistrationAndAuthorizationRequest+json");
+    request.sendRequest("POST", "things", "{\"_password\":\"password\" , \"_vendorThingID\":\"NXX0QrBnvSPOXBDF9r29GJeGS\"}");
     
 }
 

@@ -22,6 +22,12 @@ public:
     void print(const char c[]){
         std::cout<< c ;
     };
+    void print(const int i){
+        std::cout<< i ;
+    };
+    void println(const int i){
+        std::cout<< i << std::endl;
+    };
 };
 extern MockSerial Serial;
 #endif /* defined(__KiiThing__Serial__) */
