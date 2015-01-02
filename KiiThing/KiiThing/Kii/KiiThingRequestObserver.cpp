@@ -7,7 +7,7 @@
 //
 
 #include "KiiThingRequestObserver.h"
-#include "Serial.h"
+
 
 void KiiThingRequestObserver::set_json_object(String key, String value){
     if (key == "_thingID") {

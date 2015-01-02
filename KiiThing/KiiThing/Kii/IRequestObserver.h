@@ -5,6 +5,10 @@
 //  Created by Syah Riza on 12/29/14.
 //  Copyright (c) 2014 Kii. All rights reserved.
 //
+#ifdef __arm__
+#include <WString.h>
+#include <WiFiClient.h>
+#endif
 
 #ifndef __KiiThing__IRequestObserver__
 #define __KiiThing__IRequestObserver__
